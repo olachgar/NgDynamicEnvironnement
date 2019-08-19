@@ -11,6 +11,8 @@ export class AppComponent {
 
   constructor(){
 
-    this.title = this.title + ' (' + environment.name + ')'
+    let toto = process.env.ASPNETCORE_ENVIRONMENT
+    console.log(toto);
+    this.title = this.title + ' (' + toto + ')'
   }
 }
